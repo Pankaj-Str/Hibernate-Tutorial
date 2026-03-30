@@ -4,6 +4,7 @@
 Hibernate works like a **bridge** between your Java application and the Database. It hides all the complex JDBC code and lets you work only with Java objects.
 
 Let’s understand the architecture in a very simple way, step by step.
+<img width="2816" height="1536" alt="Hibernate atchitecture" src="https://github.com/user-attachments/assets/4d14a89c-2384-4b5d-ac23-1f23dffc7876" />
 
 ### 1. Configuration (Setup Phase)
 This is the first step where Hibernate gets all the necessary information to connect to the database.
@@ -28,6 +29,9 @@ Once Hibernate reads this configuration, it prepares itself to work with the dat
 - Usually, you have **one SessionFactory per database**.
 
 Think of SessionFactory as the "manager" or "head office" of Hibernate.
+
+<img width="2816" height="1536" alt="Session Factory" src="https://github.com/user-attachments/assets/909990e8-c36d-479d-9066-2477dedb2f9d" />
+
 
 ### 3. Session (The Worker)
 - Whenever you want to talk to the database (save, fetch, update, or delete data), you ask the SessionFactory to give you a **Session**.
@@ -54,6 +58,9 @@ Think of SessionFactory as the "manager" or "head office" of Hibernate.
   - **Criteria API** – Modern, type-safe way to build queries in Java code.
 
 ### Simple Flow of Hibernate Architecture
+
+<img width="2816" height="1536" alt="Life_cycle" src="https://github.com/user-attachments/assets/85957bfd-7c09-4caa-b7cf-3133b1091540" />
+
 
 ```
 Java Application
