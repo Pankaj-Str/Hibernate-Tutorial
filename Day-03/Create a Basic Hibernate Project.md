@@ -236,10 +236,10 @@ public class HibernateUtil {
             // Build SessionFactory (this is the heavy object created only once)
             sessionFactory = configuration.buildSessionFactory();
 
-            System.out.println("✅ SessionFactory created successfully!");
+            System.out.println("SessionFactory created successfully!");
 
         } catch (Exception e) {
-            System.err.println("❌ SessionFactory creation failed!");
+            System.err.println("SessionFactory creation failed!");
             throw new ExceptionInInitializerError(e);
         }
     }
@@ -272,7 +272,7 @@ import org.hibernate.Transaction;
 public class App {
     public static void main(String[] args) {
 
-        System.out.println("🚀 Starting Basic Hibernate Project...");
+        System.out.println("Starting Basic Hibernate Project...");
 
         // Get Session from SessionFactory
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
@@ -292,7 +292,7 @@ public class App {
                 // Commit transaction
                 transaction.commit();
 
-                System.out.println("✅ Student saved successfully!");
+                System.out.println("Student saved successfully!");
                 System.out.println("Student Details: " + student);
 
             } catch (Exception e) {
@@ -307,7 +307,7 @@ public class App {
             HibernateUtil.shutdown();
         }
 
-        System.out.println("🎉 Project executed successfully!");
+        System.out.println("Project executed successfully!");
     }
 }
 ```
@@ -320,14 +320,14 @@ public class App {
 2. You should see output like:
 
 ```
-🚀 Starting Basic Hibernate Project...
+Starting Basic Hibernate Project...
 Hibernate: create table if not exists student ...
-✅ SessionFactory created successfully!
+SessionFactory created successfully!
 Hibernate: insert into student (name,age) values (?,?)
-✅ Student saved successfully!
+Student saved successfully!
 Student Details: Student{id=1, name='Rahul Sharma', age=22}
 SessionFactory closed.
-🎉 Project executed successfully!
+Project executed successfully!
 ```
 
 ---
