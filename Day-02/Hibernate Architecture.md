@@ -3,7 +3,7 @@
 
 Hibernate works like a **bridge** between your Java application and the Database. It hides all the complex JDBC code and lets you work only with Java objects.
 
-Let’s understand the architecture in a very simple way, step by step.
+
 <img width="2816" height="1536" alt="Hibernate atchitecture" src="https://github.com/user-attachments/assets/4d14a89c-2384-4b5d-ac23-1f23dffc7876" />
 
 ### 1. Configuration (Setup Phase)
